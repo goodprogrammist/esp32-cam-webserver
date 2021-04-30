@@ -523,7 +523,7 @@ void setup() {
         //s->set_quality(s, val);       // 10 to 63
         //s->set_brightness(s, 0);      // -2 to 2
         //s->set_contrast(s, 0);        // -2 to 2
-        //s->set_saturation(s, 0);      // -2 to 2
+        s->set_saturation(s, -1);      // -2 to 2
         //s->set_special_effect(s, 0);  // 0 to 6 (0 - No Effect, 1 - Negative, 2 - Grayscale, 3 - Red Tint, 4 - Green Tint, 5 - Blue Tint, 6 - Sepia)
         //s->set_whitebal(s, 1);        // aka 'awb' in the UI; 0 = disable , 1 = enable
         //s->set_awb_gain(s, 1);        // 0 = disable , 1 = enable
@@ -541,7 +541,7 @@ void setup() {
         //s->set_lenc(s, 1);            // 0 = disable , 1 = enable
         //s->set_hmirror(s, 0);         // 0 = disable , 1 = enable
         //s->set_vflip(s, 0);           // 0 = disable , 1 = enable
-        //s->set_dcw(s, 1);             // 0 = disable , 1 = enable
+        s->set_dcw(s, 0);             // 0 = disable , 1 = enable
         //s->set_colorbar(s, 0);        // 0 = disable , 1 = enable
 
         // We now have camera with default init
